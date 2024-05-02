@@ -23,3 +23,4 @@ while (Object.keys(graph).length !== visited.size) {
 }
     return [];
 }
+module.exports = dijkstra;
