@@ -1,4 +1,4 @@
-const dijkstra = require('./file.js');
+const dijkstra = require('./code.js');
 
 test('Test Dijkstra function', () => {
     let graph = {
