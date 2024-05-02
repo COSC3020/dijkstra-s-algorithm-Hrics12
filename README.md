@@ -24,3 +24,12 @@ inefficient.
 
 What is the big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+
+The $\Theta$ time complexity of this implementation is $\Theta((V + E) \log V)$, where $V$ is the number of vertices and $E$ is the number of edges in the graph.
+The algorithm sets up the distances object and the visited set then takes $\Theta(V)$ time as it involves iterating over all vertices in the graph.
+The main part of the algorithm is a while loop that continues until all vertices have been visited. This loop will run a maximum of $V$ times because each iteration marks a new vertex when visited.
+In the while loop the algorithm performs two operations. First it is identifying the unvisited vertex with the smallest distance. This operation can take up to $\Theta(V)$ time if a simple array or list is used to store the vertices. 
+The second operation inside the while loop is iterating over all of the edges of the selected vertex. This operation is performed once for each edge in the graph and it takes $\Theta(E)$ time in total.
+Finally after the while loop has completed, the function returns the distances object which is a constant time operation.
+The overall time complexity is $\Theta(V \log V + E \log V)$ or $\Theta((V + E) \log V)$. When we ignore any constants or coefficients, the time complexity is $\Theta((V + E) \log V)$.
