@@ -35,3 +35,4 @@ Finally after the while loop has completed, the function returns the distances o
 The overall time complexity is $\Theta(V \log V + E \log V)$ or $\Theta((V + E) \log V)$. When we ignore any constants or coefficients, the time complexity is $\Theta((V + E) \log V)$.
 
 I used chatGPT to help me make the test and workflow for the action. I'm not that familiar with Github to know how to do that
+https://patrickkarsh.medium.com/dijkstras-shortest-path-algorithm-in-javascript-1621556a3a15
